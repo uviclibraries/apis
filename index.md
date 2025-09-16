@@ -4,33 +4,71 @@ title: Introduction
 nav_order: 1
 ---
 **UPDATE PHOTO**
-<img src="images/WORKSHOP-LOGO-HERE.png" style="float:right;width:180px;" alt="image description">
+<img src="images\rest-api-logo.png" style="float:right;width:180px;" alt="image description">
 
-# WORKSHOP TITLE HERE (Use Regular Case Like this)
+# Using APIs to GET data
 
 - Pre-workshop activities: 00 min 
-- Introductory presentation: 00 min
-- Hands-on activities: 00-00 min
+- Introductory presentation: 45 min
+- Hands-on activities: 30 min
 
-## Why TOOL NAME HERE? 
+## Why use REST APIs? 
 
-[TOOL NAME](https://TOOL-URL-HERE.org/){:target="_blank"} Desribe the tool and how it can be used. This is an example of the description for Taguette:
+[REST APIs](https://TOOL-URL-HERE.org/){:target="_blank"} are great for pulling data because they’re simple, flexible, and widely supported. They use standard web protocols (like HTTP), which means you can access data from almost any programming language (i.e. Python) or tool (i.e. Power BI). REST APIs let you request just the data you need, often in formats like JSON. Plus, they’re easy to integrate into automation workflows, dashboards, or data analysis pipelines.
 
-[Taguette](https://taguette.org/) a user-friendly and free web-based tool that helps researchers to code and analyse their qualitative data. Taguette is a great tool for those who need to analyze interviews, reports, transcripts of any kinds, and a variety of text. With the tool, we can create codes and analyse texts easily and export in different file formats. If you have some or a lot of text to analyse, Taguette might be a great option for you.
+This workshop uses a broswer to explore API enpoints (URL). Introducing REST APIs through a browser is a great starting point because it’s visual, immediate, and doesn’t require any coding knowledge. You can simply paste an API URL into the address bar, hit Enter, and see the raw data. This helps demystify how APIs work by showing that they’re just web addresses that return data instead of web pages.
 
-This workshop uses the OpenSource _Taguette_ software because it is free to use and many find it easier to learn than [other popular commercial software packages](https://en.wikipedia.org/wiki/Computer-assisted_qualitative_data_analysis_software){:target="_blank"}. 
+## Some limitations of REST APIs:
 
-This workshop is not an endorsement of Taguette; there are many options for qualitative analysis and coding and other software may be better in other contexts. While an excellent teaching tool, _Taguette_ imposes some limitations that users should be aware of:
+1. **Rate Limits**  
+   Many APIs restrict how often you can make requests, which can be a problem for large-scale or real-time data needs.
 
-- Only text can be coded. For example videos and images can not be coded.
-- Passanges coded with different tags have the same colour in Taguette. 
-- Only basic analysis can be done in Taguette. External tools, like Microsoft Excel, can be used for more advanced analysis are covered in this workshop.
+2. **Pagination Complexity**  
+   APIs often return data in chunks (pages), requiring extra logic to loop through and collect all the data.
 
-## Learning objectives - UPDATE FOR THE NEW TOOL
+3. **Authentication Overhead**  
+   Some APIs require complex authentication (like OAuth), which can be tricky for beginners to set up.
+
+4. **Inconsistent Standards**  
+   Not all REST APIs follow the same conventions, so learning one doesn’t guarantee you’ll understand another.
+
+5. **Limited Query Capabilities**  
+   Unlike databases, REST APIs may not support advanced filtering or sorting, requiring more work on the client side.
+
+6. **Versioning Issues**  
+   APIs can change over time, and if you're not using versioned endpoints, your integration might break unexpectedly.
+
+## Using Postman or Python:
+
+1. **More Control Over Requests**  
+   Postman and Python let you customize headers, authentication, and body content—things you can’t easily do in a browser.
+
+2. **Support for All HTTP Methods**  
+   Browsers only support `GET` requests directly, but APIs often require `POST`, `PUT`, or `DELETE`, which tools like Postman and Python handle easily.
+
+3. **Handling Authentication**  
+   Many APIs require tokens or keys. Postman and Python make it easy to include these securely in your requests.
+
+4. **Automation & Reusability**  
+   With Python, you can write scripts to automate data pulls, loop through paginated results, and schedule tasks—none of which is possible in a browser.
+
+5. **Better Response Handling**  
+   Postman formats responses nicely for readability, and Python lets you parse and process data programmatically, which is essential for analysis or integration.
+
+6. **Debugging & Testing**  
+   Postman offers built-in tools to test and debug API calls, while Python gives you full control to log, retry, and handle errors.
+
+
+## Learning objectives 
 
 At the end of this workshop, you will be able to:
 
-1. Identify the differences between manual coding and coding with qualitative coding software
-2. **MORE OBJECTIVES**
+1. Identify the parts of an API request URL
+2. Call a simple REST API request in a broswer
+3. Write and edit a REST API url with a custom query
+4. Read JSON data 
+5. Know the general meaning behind the response codes starting with 2, 4, and 5
+6. Define authentication, pagination, and response headers
+ 
  
 [NEXT STEP: Pre-Workshop Activities](pre-workshop.html){: .btn .btn-blue }
