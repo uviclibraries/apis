@@ -19,19 +19,18 @@ Using APIs in borwsers automoatically uses the GET method, so you wont need to w
 
 <details>
   <summary><b>Click for help with "API Endpoints" questions</b></summary>
+  <br>
+  Filter by main ingredient
   
-  ```bash
-  // Filter by main ingredient
-  
-  www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
+  `www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast`
 
-  // Change words after "i=" for different ingredient filters
-  //NOTE: spaces wont work, so use and underscore instead
+  Change words after "i=" for different ingredient filters<br>
+  NOTE: spaces wont work, so use and underscore instead
 
-  www.themealdb.com/api/json/v1/1/filter.php?i=egg
-  www.themealdb.com/api/json/v1/1/filter.php?i=banana
-  www.themealdb.com/api/json/v1/1/filter.php?i=brown_sugar
-  ```
+  `www.themealdb.com/api/json/v1/1/filter.php?i=egg` <br>
+  `www.themealdb.com/api/json/v1/1/filter.php?i=banana` <br>
+  `www.themealdb.com/api/json/v1/1/filter.php?i=brown_sugar`
+
 
 </details>
 
@@ -50,12 +49,11 @@ Locate the endpoint for meal details by id - you'll notice that the id shown is 
 
 <details>
   <summary><b>Click for help with "API Problem-Solving" questions</b></summary>
-  
-  ```bash
-  //meal id endpoint and example
+  <br>
+  Meal id endpoint and example
 
-  www.themealdb.com/api/json/v1/1/lookup.php?i=52772
-  ```
+  `www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
+
 Several endpoints will return JSON with a field called idMeal, this is the same id that can be used in the query for the meal by id endpoint. For example, the following API call shows the JSON result for the "list by first letter" endpoint:
 
 <img src="images\1-id-json-example.png" style="width:70%;" alt="image description">
@@ -70,7 +68,7 @@ Several endpoints will return JSON with a field called idMeal, this is the same 
 <img src="images\1-pancakes.png" style="width:180px;" alt="image description">
 
 ## Reading JSON
-Identify what the column headers would be in a table from the JSON data in the response of the following API calls:
+Q1: Identify what the column headers would be in a table from the JSON data in the response of the following API calls:
 1. [https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood](https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood)
 2. [https://www.themealdb.com/api/json/v1/1/list.php?c=list](https://www.themealdb.com/api/json/v1/1/list.php?c=list)
 3. [https://www.themealdb.com/api/json/v1/1/search.php?f=a](https://www.themealdb.com/api/json/v1/1/search.php?f=a)
@@ -95,7 +93,7 @@ Identify what the column headers would be in a table from the JSON data in the r
 
 <br>
 
-Find the following values in the JSON output of the API Call [https://www.themealdb.com/api/json/v1/1/search.php?s=pie](https://www.themealdb.com/api/json/v1/1/search.php?s=pie)
+Q2: Find the following values in the JSON output of the API Call [https://www.themealdb.com/api/json/v1/1/search.php?s=pie](https://www.themealdb.com/api/json/v1/1/search.php?s=pie)
 
 1. What is the Category for Fish Pie?
 2. What is the first ingredient listed for Sugar Pie?
@@ -125,4 +123,4 @@ Find the following values in the JSON output of the API Call [https://www.themea
 
 
 
-[NEXT STEP: APIs in the Browser](2-api-extras-quiz.html){: .btn .btn-blue }
+[NEXT STEP: APIs Extras Quiz](2-api-extras-quiz.html){: .btn .btn-blue }
