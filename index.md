@@ -6,7 +6,7 @@ nav_order: 1
 **UPDATE PHOTO**
 <img src="images\rest-api-logo.png" style="float:right;width:180px;" alt="rest api icon">
 
-# Using APIs to GET data
+# Using APIs to GET Data
 
 - Pre-workshop activities: 00 min 
 - Introductory presentation: 45 min
