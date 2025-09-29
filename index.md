@@ -14,7 +14,7 @@ nav_order: 1
 
 ## Why use REST APIs? 
 
-[REST APIs](https://TOOL-URL-HERE.org/){:target="_blank"} are great for pulling data because they’re simple, flexible, and widely supported. They use standard web protocols (like HTTP), which means you can access data from almost any programming language (i.e. Python) or tool (i.e. Power BI). REST APIs let you request just the data you need, often in formats like JSON. Plus, they’re easy to integrate into automation workflows, dashboards, or data analysis pipelines.
+[REST APIs](https://TOOL-URL-HERE.org/){:target="_blank"} are great for pulling data because they’re simple, flexible, and widely supported. They use standard web protocols (like HTTP), which means you can access data from almost any programming language (i.e. Python) or tool (i.e. Power BI). REST APIs let you request the data you need, often in formats like JSON. Plus, they’re easy to integrate into automation workflows, dashboards, or data analysis pipelines.
 
 This workshop uses a broswer to explore API enpoints (URL). Introducing REST APIs through a browser is a great starting point because it’s visual, immediate, and doesn’t require any coding knowledge. You can simply paste an API URL into the address bar, hit Enter, and see the raw data. This helps demystify how APIs work by showing that they’re just web addresses that return data instead of web pages.
 

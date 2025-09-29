@@ -15,21 +15,25 @@ Using APIs in borwsers automoatically uses the GET method, so you wont need to w
 3. Try the "Filter by main ingredient" end point in your browsers address bar
     * Use the example from the documentation
     * Try 3 more ingredients of your choice and see what happens. What happens when there are no recipes with the ingedient you set?
-    * Add the name of some of recipes that come up into the [Recipe Endpoints Whiteboard](https://www.canva.com/design/DAGzXJAhQ_Q/KrDhketfmSFb9-bA7rbvmA/view?utm_content=DAGzXJAhQ_Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93ee196ecf)
+    * Add the name of some of the recipes that come up into the [Recipe Endpoints Whiteboard](https://www.canva.com/design/DAGzXJAhQ_Q/KrDhketfmSFb9-bA7rbvmA/view?utm_content=DAGzXJAhQ_Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93ee196ecf)
 
 <details>
   <summary><b>Click for help with "API Endpoints" questions</b></summary>
   <br>
   Filter by main ingredient
   
-  `www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast`
+  <pre><code>
+  www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
+  </code></pre>
 
   Change words after "i=" for different ingredient filters<br>
   NOTE: spaces wont work, so use and underscore instead
 
-  `www.themealdb.com/api/json/v1/1/filter.php?i=egg` <br>
-  `www.themealdb.com/api/json/v1/1/filter.php?i=banana` <br>
-  `www.themealdb.com/api/json/v1/1/filter.php?i=brown_sugar`
+  <pre><code>
+  www.themealdb.com/api/json/v1/1/filter.php?i=egg <br>
+  www.themealdb.com/api/json/v1/1/filter.php?i=banana <br>
+  www.themealdb.com/api/json/v1/1/filter.php?i=brown_sugar
+  </pre></code>
 
 
 </details>
@@ -39,7 +43,7 @@ Using APIs in borwsers automoatically uses the GET method, so you wont need to w
 ## API Problem-Solving
 API documentation is sometimes incomplete or inaccurate, requiring you to investigate other parts of the website, examine different endpoints, and experiment to uncover the solution you need.
 
-Locate the endpoint for meal details by id - you'll notice that the id shown is a series of numbers, as are all the IDs, but there is no further detail into what the IDs in the documentation.
+Locate the endpoint for meal details by id - you'll notice that the id shown is a series of numbers, as are all the IDs, but there is no further detail into what the IDs are in the documentation.
 
 1. Test the example meal ID endpoint in your browser
 2. Try random IDs in the URL and see what happens
@@ -50,17 +54,17 @@ Locate the endpoint for meal details by id - you'll notice that the id shown is 
 <details>
   <summary><b>Click for help with "API Problem-Solving" questions</b></summary>
   <br>
-  Meal id endpoint and example
+  Meal ID endpoint and example
 
-  `www.themealdb.com/api/json/v1/1/lookup.php?i=52772`
+  <pre><code>www.themealdb.com/api/json/v1/1/lookup.php?i=52772</pre></code>
 
-Several endpoints will return JSON with a field called idMeal, this is the same id that can be used in the query for the meal by id endpoint. For example, the following API call shows the JSON result for the "list by first letter" endpoint:
+Several endpoints will return JSON with a field called idMeal, this is the same ID that can be used in the query for the meal by ID endpoint. For example, the following API call shows the JSON result for the "list by first letter" endpoint:
 
-<img src="images\1-id-json-example.png" style="width:70%;" alt="image description">
+<br><img src="images\1-id-json-example.png" style="width:70%;" alt="image description"><br>
  
- You can also find ids by browsing recipes on the the website pages. You can see the the meal id is in the URL for each recipe.
+ You can also find ids by browsing recipes on the the website pages. You can see the the meal ID is in the URL for each recipe.
 
- <img src="images\1-id-webpage-example.png" style="width:70%;" alt="image description">
+ <br><img src="images\1-id-webpage-example.png" style="width:70%;" alt="image description"><br>
 
  NOTE: Neither of these examples are consistent for all APIs. They are good examples of exploring an application to discover things about a specific API.
 </details>
@@ -76,16 +80,27 @@ Q1: Identify what the column headers would be in a table from the JSON data in t
 <details>
   <summary><b>Click for help & answers</b></summary>
 Identify what the column headers would be in a table from the JSON data in the response of the following API calls:
+<br>
 
 1. strMeal, strMealThumb, idMeal
 
+<br>
+
 <img src="images\1-json-headers.png" style="width:100%;" alt="image description">
+
+<br>
 
 2. strCategory
 
+<br>
+
 <img src="images\1-json-headers2.png" style="width:50%;" alt="image description">
 
+<br>
+
 3. 'idMeal', 'strMeal', 'strMealAlternate', 'strCategory', 'strArea', 'strInstructions', 'strMealThumb', 'strTags', 'strYoutube', 'strIngredient1', 'strIngredient2', 'strIngredient3', 'strIngredient4', 'strIngredient5', 'strIngredient6', 'strIngredient7', 'strIngredient8', 'strIngredient9', 'strIngredient10', 'strIngredient11', 'strIngredient12', 'strIngredient13', 'strIngredient14', 'strIngredient15', 'strIngredient16', 'strIngredient17', 'strIngredient18', 'strIngredient19', 'strIngredient20', 'strMeasure1', 'strMeasure2', 'strMeasure3', 'strMeasure4', 'strMeasure5', 'strMeasure6', 'strMeasure7', 'strMeasure8', 'strMeasure9', 'strMeasure10', 'strMeasure11', 'strMeasure12', 'strMeasure13', 'strMeasure14', 'strMeasure15', 'strMeasure16', 'strMeasure17', 'strMeasure18', 'strMeasure19', 'strMeasure20', 'strSource', 'strImageSource', 'strCreativeCommonsConfirmed', 'dateModified'
+
+<br>
 
 <img src="images\1-json-headers3.png" style="width:70%;" alt="image description">
 
@@ -105,17 +120,17 @@ Q2: Find the following values in the JSON output of the API Call [https://www.th
     1. What is the Category for Fish Pie?
         answer: Seafood
 
-<img src="images\1-read-json.png" style="width:50%;" alt="image description">
+<br><img src="images\1-read-json.png" style="width:50%;" alt="image description"><br>
 
     2. What is the first ingredient listed for Sugar Pie?
         answer: Brown Sugar
 
-<img src="images\1-read-json2.png" style="width:70%;" alt="image description">
+<br><img src="images\1-read-json2.png" style="width:70%;" alt="image description"><br>
 
     3. What are the tags listed for Mince Pies?
         answer: Christmas
 
-<img src="images\1-read-json3.png" style="width:50%;" alt="image description">
+<br><img src="images\1-read-json3.png" style="width:50%;" alt="image description"><br>
 
 </details>
 
