@@ -12,7 +12,7 @@ Using APIs in browsers automatically uses the GET method, so you won't need to w
 ## API Endpoints
 1. Go to [The Meal Database API documentation](https://www.themealdb.com/api.php) and read all the available endpoints
 2. Find the endpoint that allows you to filter recipes by main ingredient
-3. Try the "Filter by main ingredient" end point in your browsers address bar
+3. Try the "Filter by main ingredient" end point in your browser's address bar
     * Use the example from the documentation
     * Try 3 more ingredients of your choice and see what happens. What happens when there are no recipes with the ingedient you set?
     * Add the name of some of the recipes that come up into the [Recipe Endpoints Whiteboard](https://www.canva.com/design/DAGzXJAhQ_Q/KrDhketfmSFb9-bA7rbvmA/view?utm_content=DAGzXJAhQ_Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93ee196ecf)
