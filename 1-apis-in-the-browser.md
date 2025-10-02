@@ -5,9 +5,9 @@ nav_order: 2
 parent: Workshop Activities
 ---
 # Trying APIs in the Browser
-You'll use a broswer to explore API enpoints (URL). A browser is a great starting point because it doesn’t require any coding knowledge. You can simply paste an API URL into the address bar, hit Enter, and see the raw data. 
+You'll use a browser to explore API endpoints (URL). A browser is a great starting point because it doesn’t require any coding knowledge. You can simply paste an API URL into the address bar, hit Enter, and see the raw data. 
 
-Using APIs in borwsers automoatically uses the GET method, so you wont need to worry about specifying what method you're using.
+Using APIs in browsers automatically uses the GET method, so you won't need to worry about specifying what method you're using.
 
 ## API Endpoints
 1. Go to [The Meal Database API documentation](https://www.themealdb.com/api.php) and read all the available endpoints
