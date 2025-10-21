@@ -15,7 +15,7 @@ Using APIs in browsers automatically uses the GET method, so you won't need to w
 3. Try the "Filter by main ingredient" end point in your browser's address bar
     * Use the example from the documentation
     * Try 3 more ingredients of your choice and see what happens. What happens when there are no recipes with the ingedient you set?
-    * Add the name of some of the recipes that come up into the [Recipe Endpoints Whiteboard](https://www.canva.com/design/DAGzXJAhQ_Q/KrDhketfmSFb9-bA7rbvmA/view?utm_content=DAGzXJAhQ_Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h93ee196ecf)
+    * Add the name of some of the recipes that come up into the [Recipe Endpoints Whiteboard](https://www.canva.com/design/DAGzXJAhQ_Q/pyvwMcGEsrc8GBuXdAwcRA/edit?utm_content=DAGzXJAhQ_Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 <details>
   <summary><b>Click for help with "API Endpoints" questions</b></summary>
