@@ -14,7 +14,7 @@ nav_order: 1
 
 ## Why use REST APIs? 
 
-[REST APIs](https://TOOL-URL-HERE.org/){:target="_blank"} are great for pulling data because they’re simple, flexible, and widely supported. They use standard web protocols (like HTTP), which means you can access data from almost any programming language (i.e. Python) or tool (i.e. Power BI). REST APIs let you request the data you need, often in formats like JSON. Plus, they’re easy to integrate into automation workflows, dashboards, or data analysis pipelines.
+APIs (Application Programming Interfaces) are for software applications to interact with each other by exchanging data without having full access to each others’ databases. [REST APIs](https://en.wikipedia.org/wiki/REST) are great for pulling data because they’re simple, flexible, and widely supported. They use standard web protocols (like HTTP), which means you can access data from almost any programming language (i.e. Python) or tool (i.e. Power BI). REST APIs let you request the data you need, often in formats like JSON. Plus, they’re easy to integrate into automation workflows, dashboards, or data analysis pipelines.
 
 This workshop uses a browser to explore API endpoints (URL). Introducing REST APIs through a browser is a great starting point because it’s visual, immediate, and doesn’t require any coding knowledge. You can simply paste an API URL into the address bar, hit Enter, and see the raw data. This helps demystify how APIs work by showing that they’re just web addresses that return data instead of web pages.
 
@@ -39,6 +39,7 @@ This workshop uses a browser to explore API endpoints (URL). Introducing REST AP
    APIs can change over time, and if you're not using versioned endpoints, your integration might break unexpectedly.
 
 ## Using Postman or Python:
+[Postman](https://www.postman.com/product/what-is-postman/) and [Python](https://www.python.org/) are common tools used to interact with APIs. Postman is a GUI (graphical user interface) which allows users to test and explore APIs at a high level. Python is a programming language which has an extensive list of API libraries. Python facilitates more complex manipulation of automation with APIs and data transformation. 
 
 1. **More Control Over Requests**  
    Postman and Python let you customize headers, authentication, and body content—things you can’t easily do in a browser.
