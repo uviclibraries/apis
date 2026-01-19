@@ -7,7 +7,7 @@ parent: Workshop Activities
 
 # APIs in Postman
 
-[Postman](https://www.postman.com/) is a GUI (graphical user interface) which allows users to test and explore APIs at a high level. No programing necessary. We will by querying the [*City of Vancouver Open Data Portal* API](https://opendata.vancouver.ca/api/explore/v2.1/console) which is a database that shares public City oof Vancouver datasets.
+[Postman](https://www.postman.com/) is a GUI (graphical user interface) which allows users to test and explore APIs at a high level. No programing necessary. We will by querying the [*City of Vancouver Open Data Portal* API](https://opendata.vancouver.ca/api/explore/v2.1/console) which is a database that shares public City of Vancouver datasets.
 
 ## Make a Postman account
 
@@ -88,28 +88,28 @@ It's time to test out some API calls using Postman.
 
 ## More Advanced API Calls
 
-Let's try a call using one of the query parameters. The "refine" parameter is the same as using a facet if you were using the GUI (graphical user interface) to look-up datasets. Most of the time you cna use the GUI (if there is one) to figure out API calls
+Let's try a call using one of the query parameters. The "refine" parameter is the same as using a facet if you were using the GUI (graphical user interface) version of the City of Vancouver Open Data Portal to look-up datasets. Most of the time you can use the GUI (if there is one) to figure out API calls
 
-Apply a facet in the [GUI version of City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/). For example, select the theme "Food and Housing". You can use the resulting URL to help build your parameter for the API call.
+Apply a facet in the [GUI version of City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/). For example, select the theme "Food and Housing". You can use the resulting URL to help build your parameter for the API call. Run the API call using the GET method in Postman.
 
 <br><img src="images\3-10-filter-in-search-tool.png" style="width:90%;" alt="image description"><br> 
 
 Hint 1: the formatting is not exactly the same. Be sure to read the formatting in the API documentation closely.  
 
-Hint 2: one way to check that it's correct is compare the number and name of datasets returned. If they match, you probably did it right.
-
 <br><img src="images\3-9-refine-param.png" style="width:90%;" alt="image description"><br>    
+
+Hint 2: one way to check that it's correct is compare the number and name of datasets returned in the GUI and from the API call. If they match, you probably did it right.
 
 <details>
 <summary><b>Click for help writing the refine parameter</b></summary><br>
 
-When you select the theme "Food and Housing" the resulting URL is: 
+When you select the theme "Food and Housing" the resulting URL is: <br>
 
-https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified&==<mark>refine.theme=Food+and+housing==</mark>
+https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified&==<mark>refine.theme=Food+and+housing==</mark><br>
 
-This indicates that the facet is called "theme" and the value should have plus (+) signs between the words.
+This indicates that the facet is called "theme" and the value should have plus (+) signs between the words.<br>
 
-Translating this to the API format will become:
+Translating this to the API format will become:<br>
 
 https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets<mark>?refine=theme:Food+and+housing</mark>
 
