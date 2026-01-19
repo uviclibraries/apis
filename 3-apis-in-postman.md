@@ -105,7 +105,7 @@ Hint 2: one way to check that it's correct is compare the number and name of dat
 
 When you select the theme "Food and Housing" the resulting URL is: <br>
 
-https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified&==<mark>refine.theme=Food+and+housing==</mark><br>
+https://opendata.vancouver.ca/explore/?disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified&==<mark>refine.theme=Food+and+housing==</mark><br><br>
 
 This indicates that the facet is called "theme" and the value should have plus (+) signs between the words.<br>
 
